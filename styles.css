@@ -1,0 +1,39 @@
+*{
+    text-align: center;
+margin: 0%;
+padding: 0;
+box-sizing: border-box;
+}
+.contener{
+    width: 100;
+    margin: 10px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+.contener .box
+{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid ;
+}
+.contener .box img
+{
+    max-width: 100%;
+    border-radius: 20px;
+}
+@media(max-width:120px){
+    .contener{
+        width: calc(100% -40px);
+        columns: 3;
+    }
+}
+@media(max-width:780px){
+    .contener{
+        columns: 2;
+    }
+}
+@media(max-width:480px){
+    .contener{
+        columns: 1;
+    }
+}
